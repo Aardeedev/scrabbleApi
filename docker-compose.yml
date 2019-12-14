@@ -1,7 +1,7 @@
 version: '3'
 services:
   api:
-    image: scrabble-score-api
+    image: aardeedev/scrabble-score-api
     build: .
     networks:
       - backend
@@ -9,7 +9,7 @@ services:
       - '3000:3000'
 
   web-cli:
-    image: scrabble-score-api
+    image: aardeedev/scrabble-score-api
     networks:
       - backend
     command: sh
